@@ -13,7 +13,7 @@ body, html {
     background-color: #ebb948;
     padding: 5px;
     width: 100%;
-    margin-bottom: 0; /* Remove margin-bottom */
+    margin-bottom: 0; 
 }
 
 .word-logo {
@@ -59,11 +59,11 @@ body, html {
     position:absolute;
     background-color: #56b3eb;
     height: 450px;
-    text-align: center; /* Center the text horizontally */
-    color: white; /* White text color */
+    text-align: center; 
+    color: white; 
     width: 100%;
-    padding-top: 40px; /* Move the text down */
-    white-space: normal; /* Allow text to wrap */
+    padding-top: 40px; 
+    white-space: normal; 
     font-size: 24px;
 }
 
@@ -80,23 +80,23 @@ body, html {
     display: flex;
     align-items: center; 
     justify-content: center; 
-    flex-direction: column; /* To structure the inner content vertically */
+    flex-direction: column; 
 }
 
 .centered-image {
     position: absolute;
-    top: -166.66px; /* 1/3 of 400px, to make it go up into the blue section */
-    left: 50%; /* Centering the image horizontally */
-    transform: translateX(-50%); /* Ensures the image remains centered */
+    top: -166.66px; 
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
 .summary-box {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-    display: flex; /* To center the p tag vertically */
-    flex-direction: column; /* To structure the inner content vertically */
-    justify-content: center; /* To center the p tag vertically */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
     margin-top: 125px;
 }
 
@@ -107,20 +107,20 @@ body, html {
 
 .amount {
     font-size: 36px;
-    padding: 10px 75px; /* A bit of space around the text */
-    border-radius: 37.50px; /* Rounded corners */
+    padding: 10px 75px; 
+    border-radius: 37.50px; 
     color: white;
-    background-color: #3975e4; /* Blue background */
-    display: inline-block; /* To allow for padding and background color */
+    background-color: #3975e4; 
+    display: inline-block; /
 }
 
 /*grey section*/
 .transaction-details {
     margin-top: 20px;
-    background-color: #f6f6f6; /* Replace with your desired background color */
-    color: #333; /* Replace with your desired text color */
-    padding: 0 20%; /* Added padding to gather the content towards the center */
-    padding-top: 950px; /* Adding 40px padding at the top of transaction details */
+    background-color: #f6f6f6; 
+    color: #333; 
+    padding: 0 20%; 
+    padding-top: 950px; 
     padding-bottom: 150px;
 }
 table {
@@ -130,7 +130,7 @@ table {
 
 th, td {
     padding: 10px;
-    /* Remove border styles */
+
 }
 
 /* Align text */
@@ -153,10 +153,10 @@ td {
 
 /* Style for h3 */
 .h3 {
-    color: #3975e6; /* Set the color to blue */
+    color: #3975e6; 
     font-size: 24px;
-    text-align: center; /* Center align */
-    margin-top: 0; /* Removing top margin for 'Remitter' to maintain the 40px padding from above */
+    text-align: center; 
+    margin-top: 0; 
 }
 
 .placeholder-text {
@@ -164,7 +164,7 @@ td {
     font-weight: bold;
 }
 
-/* Ensuring that the grey section takes up the remaining space */
+
 body {
     display: flex;
     flex-direction: column;
