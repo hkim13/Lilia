@@ -5,13 +5,18 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 /* Navigation bar */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ebb948;
-    padding: 5px;
     width: 100%;
     margin-bottom: 0; 
 }
@@ -52,6 +57,7 @@ body, html {
 /*main*/
 .main {
     position: relative;
+    width: 100%;
 }
 
 /*blue section*/
@@ -165,16 +171,7 @@ td {
 }
 
 
-body {
-    display: flex;
-    flex-direction: column;
-}
 
-.main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
 
 
 
@@ -225,41 +222,63 @@ color: #333;
     text-align: right;
 }
 
+
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .header, .transaction-details, .main {
-        padding-left: 10px;
-        padding-right: 10px;
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .word-logo {
+        margin: 5px 0;
+    }
+
+    .transaction-text {
+        padding-right: 0;
+        margin-top: 10px;
+    }
+
+    .center-wrap {
+        font-size: 20px;
     }
 
     .center {
+        left: 5%; 
         width: 90%;
-        left: 5%;
+    }
+
+    .amount {
+        padding: 5px 50px; 
+        font-size: 28px;
     }
 
     .transaction-details {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 5%;
     }
 
-    .summary-box, .total-sent, .amount {
-        font-size: 16px;
-    }
-
-    th, td {
-        padding: 5px;
-    }
-
-    .footer-links a {
-        margin: 35px;
+    .h3 {
+        font-size: 20px;
     }
 
     .contact-container {
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        gap: 5%;
     }
 
     .contact-a, .contact-b {
         text-align: center;
+    }
+}
+
+/* Larger devices like tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .center {
+        left: 10%; 
+        width: 80%;
+    }
+
+    .transaction-details {
+        padding: 0 10%;
     }
 }
