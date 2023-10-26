@@ -5,12 +5,6 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 /* Navigation bar */
 .header {
     display: flex;
@@ -33,7 +27,7 @@ body, html {
 }
 
 .transaction-label {
-    margin-right: 1em; 
+    margin-right: 20px; 
     font-size: 20px; 
     color: white;
 }
@@ -57,7 +51,6 @@ body, html {
 /*main*/
 .main {
     position: relative;
-    width: 100%;
 }
 
 /*blue section*/
@@ -76,12 +69,12 @@ body, html {
 /*white section*/
 .center {
     position: absolute;
-    top: 10%;
+    top: 350px;
     left: 20%; 
     background-color: white;
     width: 60%;
-    height: 17.5%;
-    border-radius: 2.5%;
+    height: 500px;
+    border-radius: 15px;
     z-index: 10;
     display: flex;
     align-items: center; 
@@ -91,7 +84,7 @@ body, html {
 
 .centered-image {
     position: absolute;
-    top: -33.33%; 
+    top: -166.66px; 
     left: 50%; 
     transform: translateX(-50%); 
 }
@@ -103,14 +96,12 @@ body, html {
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    margin-top: 25%;
-    padding: 15%;
+    margin-top: 125px;
 }
 
 .total-sent {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 10%;
 }
 
 .amount {
@@ -119,7 +110,7 @@ body, html {
     border-radius: 37.50px; 
     color: white;
     background-color: #3975e4; 
-    display: inline-block;
+    display: inline-block; /
 }
 
 /*grey section*/
@@ -128,8 +119,8 @@ body, html {
     background-color: #f6f6f6; 
     color: #333; 
     padding: 0 20%; 
-    padding-top: 75%; 
-    padding-bottom: 10%;
+    padding-top: 950px; 
+    padding-bottom: 150px;
 }
 table {
     width: 100%;
@@ -173,13 +164,22 @@ td {
 }
 
 
+body {
+    display: flex;
+    flex-direction: column;
+}
 
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
 .footer {
     position: relative; 
-    padding: 5%; 
+    padding: 50px; 
     color: #b2b2b2;
 }
 
@@ -224,63 +224,3 @@ color: #333;
     text-align: right;
 }
 
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        padding: 10px;
-    }
-    
-    .word-logo {
-        margin: 5px 0;
-    }
-
-    .transaction-text {
-        padding-right: 0;
-        margin-top: 10px;
-    }
-
-    .center-wrap {
-        font-size: 20px;
-    }
-
-    .center {
-        left: 5%; 
-        width: 90%;
-    }
-
-    .amount {
-        padding: 5px 50px; 
-        font-size: 28px;
-    }
-
-    .transaction-details {
-        padding: 0 5%;
-    }
-
-    .h3 {
-        font-size: 20px;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        gap: 5%;
-    }
-
-    .contact-a, .contact-b {
-        text-align: center;
-    }
-}
-
-/* Larger devices like tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .center {
-        left: 10%; 
-        width: 80%;
-    }
-
-    .transaction-details {
-        padding: 0 10%;
-    }
-}
