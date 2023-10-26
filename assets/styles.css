@@ -224,3 +224,63 @@ color: #333;
     text-align: right;
 }
 
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 2vw;
+    }
+
+    .word-logo, .transaction-text {
+        margin: 2vw 0;
+    }
+
+    .center {
+        top: 40vh;
+        left: 5%;
+        width: 90%;
+        height: 60vh;
+    }
+
+    .centered-image {
+        top: -15vh;
+    }
+
+    .summary-box {
+        margin-top: 5vh;
+    }
+
+    .amount {
+        font-size: 6vw;
+        padding: 2vh 10vw;
+    }
+
+    .transaction-details {
+        padding: 0 5%;
+        padding-top: 90vh;
+    }
+
+    th, td {
+        padding: 1vw;
+    }
+
+    .translation {
+        font-size: 4vw;
+    }
+
+    .h3 {
+        font-size: 4.5vw;
+    }
+
+    .footer-links a {
+        margin: 5vw;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .contact-a, .contact-b {
+        text-align: center;
+    }
+}
