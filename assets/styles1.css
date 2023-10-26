@@ -1,0 +1,177 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebb948;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 0; /* Remove margin-bottom */
+}
+
+.word-logo {
+    display: block;
+    margin-left: 10px;
+}
+
+.transaction-text {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+}
+
+.transaction-label {
+    margin-right: 20px; 
+    font-size: 20px; 
+    color: white;
+}
+
+.transaction-bubble {
+    padding: 0px 15px; 
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: inline-flex;
+}
+
+.transaction-number {
+    margin: 5px;
+    font-family: Calibri;
+    font-size: 36px; 
+    font-weight: bold;
+    color: #e76f31;
+}
+
+
+/*main*/
+.main {
+    position: relative;
+}
+
+/*blue section*/
+.center-wrap {
+    position:absolute;
+    background-color: #56b3eb;
+    height: 450px;
+    text-align: center; /* Center the text horizontally */
+    color: white; /* White text color */
+    width: 100%;
+    padding-top: 40px; /* Move the text down */
+    white-space: normal; /* Allow text to wrap */
+    font-size: 24px;
+}
+
+/*white section*/
+.center {
+    position: absolute;
+    top: 350px;
+    left: 20%; 
+    background-color: white;
+    width: 60%;
+    height: 500px;
+    border-radius: 15px;
+    z-index: 10;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; /* To structure the inner content vertically */
+}
+
+.centered-image {
+    position: absolute;
+    top: -166.66px; /* 1/3 of 400px, to make it go up into the blue section */
+    left: 50%; /* Centering the image horizontally */
+    transform: translateX(-50%); /* Ensures the image remains centered */
+}
+
+.summary-box {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    display: flex; /* To center the p tag vertically */
+    flex-direction: column; /* To structure the inner content vertically */
+    justify-content: center; /* To center the p tag vertically */
+    margin-top: 125px;
+}
+
+.total-sent {
+    font-size: 24px;
+    text-align: center;
+}
+
+.amount {
+    font-size: 36px;
+    padding: 10px 75px; /* A bit of space around the text */
+    border-radius: 37.50px; /* Rounded corners */
+    color: white;
+    background-color: #3975e4; /* Blue background */
+    display: inline-block; /* To allow for padding and background color */
+}
+
+/*grey section*/
+.transaction-details {
+    margin-top: 20px;
+    background-color: #f6f6f6; /* Replace with your desired background color */
+    color: #333; /* Replace with your desired text color */
+    padding: 0 15%; /* Added padding to gather the content towards the center */
+    flex: 1 0 66%; /* Allocating 2/3 of space to transaction-details */
+    padding-top: 950px; /* Adding 40px padding at the top of transaction details */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    /* Remove border styles */
+}
+
+/* Align text */
+th {
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    text-align: right;
+}
+
+/* Spanish translations */
+.translation {
+    display: block;
+    font-size: 12px;
+    color: #b2b2b2;
+    margin-top: 5px;
+}
+
+/* Style for h3 */
+.h3 {
+    color: #3975e6; /* Set the color to blue */
+    font-size: 24px;
+    text-align: center; /* Center align */
+    margin-top: 0; /* Removing top margin for 'Remitter' to maintain the 40px padding from above */
+}
+
+.placeholder-text {
+    color: #b2b2b2;
+    font-weight: bold;
+}
+
+/* Ensuring that the grey section takes up the remaining space */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
