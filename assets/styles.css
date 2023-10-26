@@ -1,7 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #F5F5F5;
+body, html {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 /* Navigation bar */
@@ -47,57 +48,80 @@ body {
     color: #e76f31;
 }
 
-/* center blue */
-.center-wrap {
-    background-color: #56b3eb; /* or whatever the blue background color is */
-    padding: 20px 0; /* adjust as needed */
-    height: 500px;
-    position: relative; /* so the child .centered-image is positioned relative to this */
-    text-align: center; /* Center the text horizontally */
-    color: white; /* White text color */
-    flex: 1 0 33%; /* Allocating 1/3 of space to center-wrap */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
+
+/*main*/
+.main {
+    position: relative;
 }
 
+/*blue section*/
+.center-wrap {
+    position:absolute;
+    background-color: #56b3eb;
+    height: 450px;
+    text-align: center; /* Center the text horizontally */
+    color: white; /* White text color */
+    width: 100%;
+    padding-top: 40px; /* Move the text down */
+    white-space: normal; /* Allow text to wrap */
+    font-size: 24px;
+}
+
+/*white section*/
 .center {
-    background-color: #FFFFFF;
-    padding: 40px;
-    padding-bottom: 40px; /* Shifting the content up to make room for 40px padding at the bottom */
-    margin: 0 auto;
-    width: 60%; /* Increased width */
+    position: absolute;
+    top: 350px;
+    left: 20%; 
+    background-color: white;
+    width: 60%;
     height: 500px;
     border-radius: 15px;
-    position: relative;
+    z-index: 10;
     display: flex;
-    flex-direction: column;
+    align-items: center; 
     justify-content: center; 
-    text-align: center; /* Center the text horizontally */
-    color: black; /* White text color */
+    flex-direction: column; /* To structure the inner content vertically */
 }
 
 .centered-image {
     position: absolute;
-    bottom: -30px; /* adjust this value to make the logo hang out as desired */
-    left: 50%;
-    transform: translateX(-50%); /* center it horizontally */
+    top: -166.66px; /* 1/3 of 400px, to make it go up into the blue section */
+    left: 50%; /* Centering the image horizontally */
+    transform: translateX(-50%); /* Ensures the image remains centered */
 }
 
-.center > :first-child {
-    margin-top: 0; /* Remove margin from the first child element of .center */
+.summary-box {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    display: flex; /* To center the p tag vertically */
+    flex-direction: column; /* To structure the inner content vertically */
+    justify-content: center; /* To center the p tag vertically */
+    margin-top: 125px;
 }
 
+.total-sent {
+    font-size: 24px;
+    text-align: center;
+}
 
-/* Transaction details */
+.amount {
+    font-size: 36px;
+    padding: 10px 75px; /* A bit of space around the text */
+    border-radius: 37.50px; /* Rounded corners */
+    color: white;
+    background-color: #3975e4; /* Blue background */
+    display: inline-block; /* To allow for padding and background color */
+}
 
+/*grey section*/
 .transaction-details {
     margin-top: 20px;
     background-color: #f6f6f6; /* Replace with your desired background color */
     color: #333; /* Replace with your desired text color */
-    padding: 0 15%; /* Added padding to gather the content towards the center */
-    flex: 1 0 66%; /* Allocating 2/3 of space to transaction-details */
-    padding-top: 40px; /* Adding 40px padding at the top of transaction details */
+    padding: 0 20%; /* Added padding to gather the content towards the center */
+    padding-top: 950px; /* Adding 40px padding at the top of transaction details */
+    padding-bottom: 150px;
 }
 table {
     width: 100%;
@@ -140,4 +164,64 @@ td {
     font-weight: bold;
 }
 
+/* Ensuring that the grey section takes up the remaining space */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer {
+    position: relative; 
+    padding: 50px; 
+    color: #b2b2b2;
+}
+
+.footer-image {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 2;
+}
+
+.letter{
+color: #333;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    margin: 70px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    padding-top: 50px;
+}
+
+.contact-a {
+    text-align: left;
+}
+
+.contact-b {
+    text-align: right;
+}
 
