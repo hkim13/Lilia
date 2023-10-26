@@ -225,3 +225,41 @@ color: #333;
     text-align: right;
 }
 
+@media (max-width: 768px) {
+    .header, .transaction-details, .main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .center {
+        width: 90%;
+        left: 5%;
+    }
+
+    .transaction-details {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .summary-box, .total-sent, .amount {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    .footer-links a {
+        margin: 35px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact-a, .contact-b {
+        text-align: center;
+    }
+}
